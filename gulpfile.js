@@ -34,7 +34,7 @@ gulp.task('build', function(){
 })
 
 gulp.task('default', function(){  
-  vendor_packages.forEach(browserifyVendor);  
+  vendor_packages.forEach(browserifyVendor);
   bundle('public');
 })
 
