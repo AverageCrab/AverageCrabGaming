@@ -1,0 +1,5 @@
+extends ../layout.jade
+include ../public/footer/footer.jade
+
+block content
+  div(ng-app="public", ui-view, class="{{stateName}}")

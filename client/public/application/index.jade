@@ -1,0 +1,9 @@
+html
+  body
+    .container
+      div(masonry='masonryOptions')
+        .masonry-brick(ng-repeat='brick in bricks')
+          .widget(style="height:320px;")
+            h3 Standard title
+            .widget-separator
+              | Stuff will go in here

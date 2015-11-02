@@ -1,0 +1,65 @@
+
+.btn.btn-dropdown {
+  @extend .form-control;
+  font-weight:normal;
+  text-align:left;
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-right: 1.5em;
+  position: relative;
+  background-color:white;
+  display:inline-block;
+  margin:0;
+}
+
+.btn.btn-dropdown:hover,
+.dropdown.open .btn.btn-dropdown {
+  background-color:$input-bg;
+}
+
+.btn-dropdown-arrow {
+  font-size: 8px;
+  color: #b5b5b5;
+  position: absolute;
+  top:9px;
+  right:8px;
+
+}
+
+.btn-dropdown > .fa {
+  // margin-left: 10px;
+  margin-top: -2px;
+
+  display: inline-block;
+  vertical-align: middle;
+  position:absolute;
+}
+
+.btn-dropdown:focus,
+.btn-dropdown:active {
+  border-color: $input-border !important;
+}
+
+.btn-dropdown-placeholder {
+  color:$gray-light;
+}
+
+
+.dropdown-menu {
+  max-height:200px;
+  overflow-x:hidden;
+  max-width:350px;
+  font-size:.8rem;
+}
+
+a.dropdown-item {
+  font-weight:normal;
+  white-space: normal;
+}
+
+a.dropdown-item.hover {
+  color: $dropdown-link-hover-color;
+  text-decoration: none;
+  background-color: $dropdown-link-hover-bg;
+}

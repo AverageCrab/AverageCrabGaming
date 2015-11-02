@@ -1,0 +1,40 @@
+extends ../../layout.jade
+
+block content
+	.container-fluid
+		.row.row-xs-center.row-top-margin
+			.col-xs-4.col-md-offset-4
+				.card.amp-portal-card.text-center
+					.card-block
+						button#fb-btn.btn.btn-fb.btn-block(ng-click="loginWithFacebook()")
+							i.flaticon.flaticon-facebook29
+							| Login with Facebook
+						hr
+	
+						form.login-manual(name="form", novalidate, ng-submit="form.$valid && submitLogin()")
+							.form-group
+								label.sr-only(for='email') Email Address
+								input#email.form-control.form-control-error(type='email', name='email', ng-model="login.email", required, placeholder='Email Address')
+								div(ng-messages="form.email.$error", show-errors="form.email", role="alert")
+							.form-group
+								label.sr-only(for='password') Password
+								input#password.form-control.form-control-error(type='password', name='password', ng-model="login.password", required, placeholder='Password')
+								div(ng-messages="form.password.$error", show-errors="form.password", role="alert")
+							.form-group.clearfix
+								a#create-account.btn.btn-link.btn-create-account.pull-left(href="/signup") Create Account
+								button#login.btn.btn-sm.btn-gold.pull-right(type='submit') Login
+							.form-group.support-links
+								a(href='/forgot-password') Forgot Password? 
+								a(href='/support') Need support?
+						script(type="text/javascript").
+							function fn(e){
+								e.preventDefault();
+								var user = document.querySelector('#email').value || "";
+								console.log(user)
+								if (user.toLowerCase() == 'funder') {
+									window.location = '/funder'
+								} else {
+									window.location = '/dashboard'
+								}
+							}
+							document.querySelector('form').addEventListener('submit', fn)

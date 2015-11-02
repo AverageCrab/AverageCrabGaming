@@ -1,0 +1,120 @@
+body, html {
+  height: 100% !important;
+  background-color: #d3d3d3;
+}
+
+
+header .nav-link, header .nav-link a {
+  color:inherit;
+}
+
+header.header-default {
+  background-color: $head-foot-bg;
+}
+
+header.header-default {
+  font-size: .8em;
+  margin-bottom: 3em;
+  color:#FFF;
+}
+
+header.amp-header-home .dropdown ul {
+  background: rgba(0,0,0,0.6);
+  padding:.6em 1em;
+}
+
+header.amp-header-home .dropdown > li > ul {
+  margin-top:26px;
+  margin-left:-2em;
+}
+  
+header.amp-header-home {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom:0;
+  height:$header-height;
+  .navbar {
+    height:$header-height;
+    display:table;
+    width:100%;
+    padding: 0;
+    >.container-fluid {
+      display:table-cell;
+      vertical-align: middle;
+      >.amp-navbar {
+        height:100%;
+        >div.menu-col {
+          background-color: $primary-color;
+        }
+        >div {
+          height: 100%;
+          .navbar-brand {
+            height: 100%;
+            .logo-gold {
+              height: 100%;
+              background-position: 50%;
+            }
+          }
+          nav {
+            height: 100%;
+            display:table;
+            >.nav-link {
+              height: 100%;
+              display:table-cell;
+              vertical-align: middle;
+              padding-left:20px;
+              padding-right:30px;
+              >ul {
+                height:100%;
+                padding-right:30px;
+                >li {
+                  height:100%;
+                  display:table;
+                  >a {
+                    height:100%;
+                    display:table-cell;
+                    vertical-align: middle;
+                  }
+                  >ul {
+                    margin-top: 0;
+                    margin-left: -20px;
+                  }
+                  ul {
+                    background-color:$head-foot-submenu-bg;
+                  }
+                }
+              }
+            }
+            div.carret-wrapper {
+              height:100%;
+              display:table-cell;
+              vertical-align: middle;
+              padding-left:24px;
+            }
+            >div.nav-link {
+              padding-right:0;
+            }
+            .nav-link:last-child,  {
+              padding-right: 10px;
+            }
+            .nav-link:last-child ul.dd {
+              padding-right:0;
+            }
+            .nav-link:hover {
+              background-color:$head-foot-submenu-bg;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.dd li {
+  padding: 6px 0;
+}
+
+div.header-spacer
+{
+  height:10px;
+}

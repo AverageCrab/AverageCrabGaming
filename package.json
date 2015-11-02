@@ -1,0 +1,42 @@
+{
+  "name": "good-exchange-web",
+  "version": "0.0.1",
+  "private": "true",
+  "dependencies": {
+    "angular": "^1.4.7",
+    "angular-ui-router": "^0.2.15",
+    "bluebird": "^2.10.2",
+    "body-parser": "^1.14.1",
+    "bootstrap": "https://github.com/twbs/bootstrap/archive/v4-dev.tar.gz",
+    "client-sessions": "^0.7.0",
+    "cookie-parser": "^1.4.0",
+    "debug": "^2.2.0",
+    "express": "^4.13.3",
+    "font-awesome": "^4.4.0",
+    "jquery": "^2.1.4",
+    "js-yaml": "^3.4.3",
+    "masonry-layout": "^3.3.2",
+    "morgan": "^1.6.1",
+    "proxy-middleware": "^0.14.0",
+    "superagent": "^1.4.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "browserify": "^11.2.0",
+    "browserify-ngannotate": "^1.0.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.2",
+    "gulp-livereload": "^3.8.1",
+    "gulp-pixrem": "^1.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.4.2",
+    "gulp-util": "^3.0.6",
+    "jade": "^1.11.0",
+    "jadeify": "^4.4.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.4.0"
+  }
+}

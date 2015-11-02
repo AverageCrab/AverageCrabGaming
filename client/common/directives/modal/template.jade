@@ -1,0 +1,5 @@
+.ge-modal-container(ng-if='isOpen')
+  .ge-modal-overlay(ng-click='hideModal()')
+  .ge-modal
+    .ge-modal-dialog(ng-style='dialogStyle')
+      .ge-modal-dialog-content(ng-transclude='')

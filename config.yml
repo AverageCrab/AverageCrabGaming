@@ -1,0 +1,8 @@
+default:
+  vendor_packages:
+    - angular
+    - angular-ui-router
+    - jquery
+    - bootstrap
+    - bluebird
+    - bootstrap

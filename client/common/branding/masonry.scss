@@ -1,0 +1,25 @@
+.widget {
+  padding:1.5em 1em;
+  width: 275px;
+  height:295px;
+  background-color:white;
+  border-radius: 3px;
+  border-color: black;  
+  margin-bottom:10px;
+  text-align: left;
+  overflow:hidden;
+  font-size:.8em;
+}
+
+.widget-separator {
+  height: 1px;
+  background-color: #E2E2E2;
+  margin: .8em -1em 1.2em 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 960px;
+    margin:100px auto;
+    text-align: center;
+}
