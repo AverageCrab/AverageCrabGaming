@@ -33,6 +33,11 @@ gulp.task('build', function(){
   bundle('public').build();
 })
 
+gulp.task('default', function(){  
+  vendor_packages.forEach(browserifyVendor);  
+  bundle('public');
+})
+
 
 
 

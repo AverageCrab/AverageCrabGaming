@@ -6,6 +6,7 @@ var bodyParser = require('body-parser');
 var morgan = require('morgan');
 var pkg = require('../package.json');
 var config = require('../config');
+var port = process.env.PORT || 8080;
 
 // exports express app
 var app = module.exports = express();
@@ -54,5 +55,5 @@ app.use(require('./public'));
 // app.use(require('./dashboard'));
 // app.use(require('./funderDashboard'));
 // start server
-console.log('listening on port 8080');
-app.listen(8080)
+console.log('listening on port ' + port);
+app.listen(port)
