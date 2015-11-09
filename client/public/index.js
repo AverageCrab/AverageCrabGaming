@@ -19,18 +19,3 @@ setup.state('public', {
   controller: require('./application/index'),
   controllerAs : 'vm',
 });
-// 
-// setup.state('public.application', {
-//   url: '/application',
-//   template: require('./application/index.jade'),
-//   controller: require('./application/index'),
-//   controllerAs : 'vm',
-// })
-// 
-// setup.state('public.funderRegistration', {
-//   url: '/funderRegistration',
-//   template: require('./funderRegistration/index.jade'),
-//   controller: require('./funderRegistration/index'),
-//   controllerAs : 'vm',
-// })
-

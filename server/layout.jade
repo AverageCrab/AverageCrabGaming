@@ -11,7 +11,7 @@ html
       script(type="text/javascript", src="#{script}.js")
     each s in styles
       link(rel="stylesheet", href="#{s}.css")
-  body
+  body.background-image
     +header
     block content
     each script in scripts

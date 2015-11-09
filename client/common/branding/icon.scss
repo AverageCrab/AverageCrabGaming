@@ -7,3 +7,10 @@
   background-image: url("./assets/crab.png");
   opacity:0.2;
 }
+
+.background-image {
+  background-image: url("./assets/brushed.png");
+  background-repeat: repeat;
+  background-position: top left;
+  background-attachment: scroll;
+}

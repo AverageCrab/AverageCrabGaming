@@ -1,11 +1,11 @@
 .widget {
-  padding:1.5em 1em;
-  width: 275px;
-  height:295px;
+  padding:10px;
+  width: 600px;
+  height:800px;
   background-color:white;
   border-radius: 3px;
   border-color: black;  
-  margin-bottom:10px;
+  margin-bottom:40px;
   text-align: left;
   overflow:hidden;
   font-size:.8em;
@@ -13,8 +13,9 @@
 
 .widget-separator {
   height: 1px;
-  background-color: #E2E2E2;
+  background-color: #adadad;
   margin: .8em -1em 1.2em 0;
+  width: 100%;
 }
 
 .container{
